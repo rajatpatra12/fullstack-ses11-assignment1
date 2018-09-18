@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home page</title>
+</head>
+<body id="body">
+	<script type="text/javascript">
+		var p=document.createElement('p');
+        //creating element p
+        p.innerText="The Document Object Model (DOM) is aprogramming interface for HTML and XML documents. It represents the page so thatprograms can change the document structure, style, and content. The DOM representsthe document as nodes and objects. That way, programming languages can connect to the page.";
+        //setting this paragraph to this
+        var body=document.querySelector("#body");
+        //getting body
+        body.appendChild(p);
+        //apending p to body
+        p.style.color="purple";
+        //setting color of p
+        var p1=document.createElement('p');
+        p1.innerText="A Web page is a document. This document can be either displayed in the browser window or as the HTML source. But it is the same document in both cases. The Document Object Model (DOM) represents that samedocument so it can be manipulated. The DOM is an object-oriented representation of the web page, which can be modified with a scripting language such as JavaScript.";
+        body.appendChild(p1);
+        p1.style.color="red";
+        body.style.backgroundColor = "lightgrey";
+	</script>
+</body>
+</html>
